@@ -4,9 +4,11 @@ import {
   convertDataFromDB,
   getTeams,
 } from '../firebase/firestore/firestoreActions';
+import { CustomModal } from '../components/helpers/CustomModal';
 
 const Tournament = () => {
   const [teams, setTeams] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   //Get users from DB
   useEffect(() => {
@@ -16,9 +18,20 @@ const Tournament = () => {
   console.log('teams: ', teams);
 
   return (
-    <Page>
-      <p>to je tournament</p>
-    </Page>
+    <>
+      <CustomModal
+        className="pilkarzyki__modal"
+        enableClickAway
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+      >
+        <p>siemanko</p>
+      </CustomModal>
+      <Page>
+        <p>to je tournament</p>
+        <button onClick={() => setIsModalOpen(true)}>Otwieraj</button>
+      </Page>
+    </>
   );
 };
 
