@@ -1,3 +1,59 @@
+
 .app-root{
-  background: aqua;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #F6F7FF;
+  color: var(--color-gray);
+  font-family: Roboto Mono;
+}
+.pilkarzyki {
+  &__nav{
+    height: var(--nav-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-link{
+      padding: 10px;
+      color: var(--color-dark-gray);
+      transition: color 300ms ease;
+      text-decoration: none;
+      &:visited{
+        color: var(--color-dark-gray);
+      }
+      &:hover{
+        color: var(--color-primary)
+      }
+      &:active{
+        color: var(--color-primary)
+      }
+    }
+  }
+  &__main{
+    height: calc(100% - var(--nav-height) - var(--footer-height));
+  }
+  &__footer{
+    height: var(--footer-height);
+  }
+  &__footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.6rem;
+    &-author{
+      color: var(--color-gray);
+      transition: color 300ms ease;
+      text-decoration: none;
+      &:visited{
+        color: var(--color-gray);
+      }
+      &:hover{
+        color: var(--color-primary)
+      }
+      &:active{
+        color: var(--color-primary)
+      }
+    }
+    &-title{}
+  }
 }
