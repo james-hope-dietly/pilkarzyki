@@ -1,15 +1,11 @@
-import Navigation from '../components/Navigation';
-import Tournament from './tournament';
-import Footer from '../components/Footer';
+import Page from '../components/Page';
 
 const Index = () => {
   return (
     <div className="app-root">
-      <Navigation />
-      <div className="pilkarzyki__main">
-        <p>zupa</p>
-      </div>
-      <Footer />
+      <Page>
+        <p>To je strona główna, ładna grafika</p>
+      </Page>
     </div>
   );
 };

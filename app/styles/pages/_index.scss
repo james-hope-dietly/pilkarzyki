@@ -1,45 +1,38 @@
 
-.app-root{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  background-color: #F6F7FF;
-  color: var(--color-gray);
-  font-family: Roboto Mono;
-}
+.app-root{}
 .pilkarzyki {
-  &__nav{
-    height: var(--nav-height);
-    display: flex;
+  &__bests{
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    &-link{
-      padding: 10px;
-      color: var(--color-dark-gray);
-      transition: color 300ms ease;
-      text-decoration: none;
-      &:visited{
-        color: var(--color-dark-gray);
-      }
-      &:hover{
-        color: var(--color-primary)
-      }
-      &:active{
-        color: var(--color-primary)
-      }
+    &-best{
+      border: 1px solid black;
+      min-width: 200px;
+      padding: 8px;
+    }
+    &-row{
+      width: 300px;
+    }
+    &-title{
+      margin-bottom: 24px;
+      font-size: 1.75rem;
     }
   }
-  &__main{
-    height: calc(100% - var(--nav-height) - var(--footer-height));
-  }
-  &__footer{
-    height: var(--footer-height);
+  &__container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #F6F7FF;
+    color: var(--color-gray);
+    font-family: Roboto Mono, sans-serif;
   }
   &__footer{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 0.6rem;
+    height: var(--footer-height);
     &-author{
       color: var(--color-gray);
       transition: color 300ms ease;
@@ -54,6 +47,30 @@
         color: var(--color-primary)
       }
     }
+  }
+    &__main{
+      height: calc(100% - var(--nav-height) - var(--footer-height));
+    }
+    &__nav{
+      height: var(--nav-height);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-link{
+        padding: 10px;
+        color: var(--color-dark-gray);
+        transition: color 300ms ease;
+        text-decoration: none;
+        &:visited{
+          color: var(--color-dark-gray);
+        }
+        &:hover{
+          color: var(--color-primary)
+        }
+        &:active{
+          color: var(--color-primary)
+        }
+      }
     &-title{}
   }
 }
