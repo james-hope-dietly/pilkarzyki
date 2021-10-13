@@ -13,10 +13,11 @@ const Tournament = () => {
     convertDataFromDB(getTeams).then(data => setTeams(data));
   }, []);
 
+  console.log('teams: ', teams);
+
   return (
     <Page>
       <p>to je tournament</p>
-      <p>{teams}</p>
     </Page>
   );
 };
