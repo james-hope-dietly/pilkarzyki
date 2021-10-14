@@ -50,6 +50,16 @@
   }
     &__main{
       height: calc(100% - var(--nav-height) - var(--footer-height));
+    &-page{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      &-title{
+        margin-top: 40px;
+        font-size: 1.9rem;
+      }
+    }
     }
     &__modal{
       background: var(--color-background) !important;
@@ -75,5 +85,13 @@
         }
       }
     &-title{}
+  }
+  &__separator{
+    content: '';
+    height: 0.1px;
+    width: 75vw;
+    background: var(--color-black);
+    margin: 0 auto;
+    opacity: 0.3;
   }
 }

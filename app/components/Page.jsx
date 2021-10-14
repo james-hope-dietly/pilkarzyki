@@ -7,7 +7,9 @@ const Page = ({ children, classes }) => {
   return (
     <div className="pilkarzyki__container">
       <Navigation />
+      <div className="pilkarzyki__separator" />
       <div className={`pilkarzyki__main ${classes ?? ''}`}>{children}</div>
+      <div className="pilkarzyki__separator" />
       <Footer />
     </div>
   );
