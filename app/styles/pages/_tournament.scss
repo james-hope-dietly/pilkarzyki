@@ -1,0 +1,29 @@
+.tournament{
+  &__form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    & > * {
+      margin: 8px;
+    }
+    &-error{
+     color: red;
+    }
+  }
+  &__start{
+    background-color: var(--color-gray);
+    font-family: Roboto Mono;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 16px;
+    color: white;
+    transition: 300ms ease all;
+    &:hover{
+      background-color: var(--color-green);
+      color: var(--color-primary);
+      cursor: pointer;
+    }
+  }
+
+}

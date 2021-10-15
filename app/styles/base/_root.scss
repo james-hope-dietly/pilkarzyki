@@ -3,7 +3,20 @@
   --color-black: #283238;
   --color-dark-gray: #1f2e4d;
   --color-gray: #62748c;
+  --color-green: #92E4A9;
   --color-primary: #06257f;
   --nav-height: 80px;
   --footer-height: 50px
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-center-column{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }

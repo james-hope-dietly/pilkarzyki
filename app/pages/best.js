@@ -35,7 +35,7 @@ const Best = () => {
           ))}
         </table>
       ) : (
-        <Image height={500} src={Loader} width={500} />
+        <Image height={500} placeholder="blur" src={Loader} width={500} />
       )}
     </Page>
   );

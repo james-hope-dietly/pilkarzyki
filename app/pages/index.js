@@ -7,7 +7,7 @@ const Index = () => {
     <div className="app-root">
       <Page classes={'pilkarzyki__main-page'}>
         <p className="pilkarzyki__main-page-title">{`Turniej piłkarzyków Black Ass ${new Date().getFullYear()}`}</p>
-        <Image height={500} src={Soccer} width={500} />
+        <Image height={500} placeholder="blur" src={Soccer} width={500} />
       </Page>
     </div>
   );

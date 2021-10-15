@@ -1,6 +1,6 @@
 import firebase from '/firebase/config/firebase.config';
 
-const db = firebase.firestore();
+export const db = firebase.firestore();
 
 export const convertDataFromDB = async apiCall => {
   const dataFromFB = await apiCall;
@@ -11,3 +11,9 @@ export const convertDataFromDB = async apiCall => {
 export const getTeams = db.collection('teams').get();
 
 export const getBests = db.collection('bests').get();
+
+export const addTeam = team => db.collection('teams').add(team);
+
+// export const resetTeams = getTeams.then(data =>
+//   data.forEach(document => document.ref.delete())
+// );
