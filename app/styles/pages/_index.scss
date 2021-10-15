@@ -10,6 +10,9 @@
       border: 1px solid black;
       min-width: 200px;
       padding: 8px;
+      &--small{
+        min-width: 100px;
+      }
     }
     &-row{
       width: 300px;

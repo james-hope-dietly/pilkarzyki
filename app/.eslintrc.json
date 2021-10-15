@@ -38,9 +38,7 @@
     "react/display-name": "off",
     "react-hooks/exhaustive-deps": "warn",
     "react-hooks/rules-of-hooks": "error",
-    "react/jsx-sort-props": [1, { "ignoreCase": true }],
     "react/react-in-jsx-scope": "off",
-    "react/sort-prop-types": [1, { "ignoreCase": true, "sortShapeProp": true }],
     "jsx-a11y/click-events-have-key-events": "warn",
     "jsx-a11y/no-static-element-interactions": "warn",
     "jsx-a11y/no-noninteractive-element-interactions": [

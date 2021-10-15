@@ -24,7 +24,9 @@ const Best = () => {
           <tr className="pilkarzyki__bests-row">
             <td className="pilkarzyki__bests-best">Nazwa drużyny</td>
             <td className="pilkarzyki__bests-best">Wygrano turniejów</td>
-            <td className="pilkarzyki__bests-best">Max. liczba punktów</td>
+            <td className="pilkarzyki__bests-best">
+              Liczba strzelonych bramek
+            </td>
           </tr>
           {sortedBests.slice(0, 10).map(best => (
             <tr className="pilkarzyki__bests-row" key={best.name}>
